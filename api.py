@@ -12,11 +12,11 @@ app = FastAPI(
 
 @app.get("/rank", response_class=PlainTextResponse)
 async def rank(
-    nick: str = Query(..., description="Nick a procurar no SoloBoom (ex: Master_yi_doente)")
+    nick: str = Query(..., description="Nick a procurar no SoloBoom (ex: Faker)")
 ):
     """
     Exemplo:
-      GET /rank?nick=Master_yi_doente
+      GET /rank?nick=Faker
     Retorna uma string pronta para ser usada em chat (Twitch, Discord, etc.).
     """
     return await get_player_message(nick)

@@ -118,7 +118,7 @@ def find_player(players: List[Player], query: str) -> Optional[Player]:
     """
     Busca dinâmica por nick:
       - case-insensitive (lower())
-      - busca parcial (ex: 'master', 'kirito')
+      - busca parcial (ex: 'faker', 'kirito')
       - se mais de um, retorna o melhor colocado
     """
     q = query.strip().lower()
@@ -185,7 +185,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(
         description="Consulta o leaderboard do SoloBoom e mostra o rank de um nick."
     )
-    parser.add_argument("nick", help="Nick a procurar (ex: Master_yi_doente)")
+    parser.add_argument("nick", help="Nick a procurar (ex: Faker)")
     parser.add_argument("--json", action="store_true", help="Output em JSON")
 
     args = parser.parse_args()
