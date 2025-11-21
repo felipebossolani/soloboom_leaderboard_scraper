@@ -22,3 +22,13 @@ __pycache__/
 # gerar se usar setuptools / build
 dist/
 build/
+
+# Virtual env
+venv/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# macOS
+.DS_Store
